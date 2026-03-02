@@ -236,6 +236,10 @@ func (t *SubprocessCLITransport) buildCommand() []string {
 		cmd = append(cmd, "--resume", *t.options.Resume)
 	}
 
+	if t.options.SessionID != nil {
+		cmd = append(cmd, "--session-id", *t.options.SessionID)
+	}
+
 	if sv := t.buildSettingsValue(); sv != nil {
 		cmd = append(cmd, "--settings", *sv)
 	}

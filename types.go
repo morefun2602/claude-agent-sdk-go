@@ -386,6 +386,7 @@ type ClaudeAgentOptions struct {
 	PermissionMode           *PermissionMode              `json:"permission_mode,omitempty"`
 	ContinueConversation     bool                         `json:"continue_conversation,omitempty"`
 	Resume                   *string                      `json:"resume,omitempty"`
+	SessionID                *string                      `json:"session_id,omitempty"`
 	MaxTurns                 *int                         `json:"max_turns,omitempty"`
 	MaxBudgetUsd             *float64                     `json:"max_budget_usd,omitempty"`
 	DisallowedTools          []string                     `json:"disallowed_tools,omitempty"`
